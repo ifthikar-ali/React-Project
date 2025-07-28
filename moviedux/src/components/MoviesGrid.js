@@ -3,5 +3,10 @@ import "../styles.css";
 
 export default function MoviesGrid() {
   const [movies, setMovies] = useState([]);
-  return <div> </div>;
+
+  useEffect(() => {
+    const m = ["a", "b", "c"];
+    setMovies(m);
+  }, []);
+  return <div>{movies.length}</div>;
 }
